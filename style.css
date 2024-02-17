@@ -8,6 +8,7 @@ body {
   /* Change later */
   height: 100vh;
   font-family: "Roboto", sans-serif;
+  color: #05080A;
 
   display: grid;
   grid-template-rows: 150px 1fr;
@@ -19,34 +20,66 @@ body {
 
 /* HEADER */
 .header {
+  padding: 0 50px 0 40px;
+  box-shadow: 0 0 12px 0px rgb(148, 149, 150);
+
   grid-area: header;
 
   display: grid;
   grid-template-rows: 60px 1fr;
+  align-items: center;
+
+  z-index: 1;
 }
 
 .header-nav {
   display: grid;
-  gap: 5px;
-  grid-template-columns: 30px 1fr 30px 30px auto;
+  grid-auto-flow: column;
+  gap: 30px;
+  align-items: center;
+  grid-template-columns: auto 1fr auto auto auto;
 }
 
+.header-nav > label {
+  height: 24px;
+}
+
+.header-nav > p {
+  font-weight: bold;
+}
+
+#search-bar {
+  max-width: 700px;
+  border-radius: 100px;
+  border-style: none;
+  background-color: #e2e7eb;
+  
+  align-self: stretch;
+}
+
+/* second row */
 .header-info {
   display: grid;
-  gap: 20px;
-  grid-template-columns: 80px 1fr repeat(3, 50px);
+  gap: 25px;
+  grid-template-columns: 80px 1fr repeat(3, 100px);
+  align-items: center;
 }
 
-.search-bar {
-  background-color: grey;
-  width: auto;
-  height: 30px;
+.header-info > button {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #4C94BD;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 100px;
 }
 
 /* SIDEBAR */
 .sidebar {
-  background-color: #6293A0;
-  color: #0D0F10;
+  background-color: #4B93BD;
+  color: #05080A;
   font-weight: medium;
   padding: 0 30px 0 30px;
 
@@ -56,6 +89,8 @@ body {
   gap: 40px;
   grid-template-rows: 150px auto auto 1fr;
   align-items: center;
+
+  z-index: 2;
 }
 
 .sidebar-container {
@@ -80,6 +115,9 @@ body {
 
 /* ARTICLE */
 .article {
+  background-color: #e2e7eb;
+  padding: 30px 50px;
+
   grid-area: article;
 
   display: grid;

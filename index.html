@@ -16,22 +16,22 @@
 <body>
   <section class="header">
     <div class="header-nav">
-      <box-icon name='search'></box-icon>
-      <div class="search-bar"></div>
+      <label for="search-bar"><box-icon name='search'></box-icon></label>
+      <input type="text" id="search-bar" name="search-bar">
       <box-icon name='bell'></box-icon>
-      <img src="./References/Images/logoipsum-294.svg" alt="" width="30px">
-      <p>FirstName LastN</p>
+      <img src="./References/Images/logoipsum-294.svg" alt="" width="40px">
+      <p>Jhone Dough</p>
     </div>
 
     <div class="header-info">
       <img src="./References/Images/logoipsum-294.svg" alt="" width="80px">
-      <div>
+      <div class="welcome-message">
         <p>Hi there,</p>
-        <p>FirstName LastName (@asdf)</p>
+        <h2>Jhone Dough (@JhoneD531)</h2>
       </div>
-      <button>button</button>
-      <button>button</button>
-      <button>button</button>
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
     </div>
   </section>
   
@@ -41,25 +41,26 @@
     </div>
 
     <div class="sidebar-container navigation">
-      <div><box-icon name='home-alt-2' color="#0D0F10"></box-icon>Home</div>
-      <div><box-icon name='user' color="#0D0F10"></box-icon>Profile</div>
-      <div><box-icon name='envelope' color="#0D0F10"></box-icon>Messages</div>
-      <div><box-icon name='time' color="#0D0F10"></box-icon>History</div>
-      <div><box-icon name='task' color="#0D0F10"></box-icon>Tasks</div>
-      <div><box-icon name='group' color="#0D0F10"></box-icon>Communities</div>
+      <div><box-icon name='home-alt-2' color="#05080A"></box-icon>Home</div>
+      <div><box-icon name='user' color="#05080A"></box-icon>Profile</div>
+      <div><box-icon name='envelope' color="#05080A"></box-icon>Messages</div>
+      <div><box-icon name='time' color="#05080A"></box-icon>History</div>
+      <div><box-icon name='task' color="#05080A"></box-icon>Tasks</div>
+      <div><box-icon name='group' color="#05080A"></box-icon>Communities</div>
     </div>
 
     <div class="sidebar-container utility">
-      <div><box-icon name='cog' color="#0D0F10"></box-icon>Settings</div>
-      <div><box-icon name='support' color="#0D0F10"></box-icon>Support</div>
-      <div><box-icon name='check-shield' color="#0D0F10"></box-icon>Privacy</div>
+      <div><box-icon name='cog' color="#05080A"></box-icon>Settings</div>
+      <div><box-icon name='support' color="#05080A"></box-icon>Support</div>
+      <div><box-icon name='check-shield' color="#05080A"></box-icon>Privacy</div>
     </div>
   </section>
   
   <section class="article">
     <div class="main-content">
-      <p>Your Projects</p>
+      <h3>Your Projects</h3>
 
+      <div class="main-content-items"></div>
       <div class="main-content-items"></div>
       <div class="main-content-items"></div>
       <div class="main-content-items"></div>
@@ -69,7 +70,7 @@
     </div>
 
     <div class="announcement">
-      <p>Announcement</p>
+      <h3>Announcement</h3>
 
       <div class="announcement-content container">
         <div></div>
@@ -79,7 +80,7 @@
     </div>
     
     <div class="trending">
-      <p>Trending</p>
+      <h3>Trending</h3>
 
       <div class="trending-content container">
         <div></div>
