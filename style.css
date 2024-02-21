@@ -55,6 +55,11 @@ body {
   background-color: #e2e7eb;
   
   align-self: stretch;
+
+  padding-left: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #05080A;
+  font-size: 1em;
 }
 
 /* second row */
@@ -93,6 +98,11 @@ body {
   z-index: 2;
 }
 
+.logo {
+  color: #05080A;
+  font-weight: bold;
+}
+
 .sidebar-container {
 
   display: grid;
@@ -117,11 +127,13 @@ body {
 .article {
   background-color: #e2e7eb;
   padding: 30px 50px;
+  overflow-y: scroll;
+
 
   grid-area: article;
 
   display: grid;
-  grid-template: 6fr 5fr / 1fr 300px;
+  grid-template: 350px 325px / 1fr 300px;
   gap: 30px 20px;
 }
 
@@ -132,12 +144,12 @@ body {
 
   display: grid;
   grid-template: 30px / 1fr;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .main-content-container {
   display: grid;
-  grid-template: repeat(3, 33%) / repeat(auto-fit, minmax(150px, 350px));
+  grid-template: repeat(3, 250px) / repeat(auto-fit, minmax(150px, 350px));
   grid-auto-rows: 100px;
   gap: 20px;
 }
@@ -218,4 +230,14 @@ body {
   font-size: .8em;
   font-weight: normal;
   color: grey;
+}
+
+
+
+.hover {
+  transition: all .2s ease;
+}
+
+.hover:hover {
+  scale: 1.06;
 }
